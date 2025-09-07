@@ -1,7 +1,7 @@
 <?php
 
 require_once "./headers.php";
-require_once "./session.php";
+//require_once "./session.php";
 
 
 $headers = headers_list();
