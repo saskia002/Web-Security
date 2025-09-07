@@ -1,15 +1,15 @@
 <?php
 
-//session_name("Saskia");
+session_name("Saskia");
 
-//session_set_cookie_params([
-//	"path"     => "/",
-//	"secure"   => "true",
-//	"samesite" => "Strict",
-//	"httponly" => true,
-//]);
+session_set_cookie_params([
+	"path"     => "/",
+	"secure"   => "true",
+	"samesite" => "Strict",
+	"httponly" => true,
+]);
 
-//session_start();
+session_start();
 
 
 header_remove();
