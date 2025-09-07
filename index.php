@@ -6,6 +6,6 @@ require_once "./session.php";
 
 $headers = headers_list();
 
-foreach ($headers as $header => $value) {
-	echo "$header: $value <br>";
+foreach ($headers as $header) {
+	echo "$header <br>";
 }
