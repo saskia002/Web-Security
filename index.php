@@ -3,4 +3,9 @@
 require_once "./headers.php";
 require_once "./session.php";
 
-echo (getallheaders());
+
+$headers = getallheaders();
+
+foreach ($headers as $header => $value) {
+	echo "$header: $value <br>";
+}
