@@ -97,8 +97,8 @@ $current_request_method = $_SERVER['REQUEST_METHOD'];
 $allowed_request_methods = array('GET', 'POST', );
 if (!in_array($current_request_method, $allowed_request_methods)) {
 	http_response_code(405);
-	$error_message = 'Method Not Allowed: ' . $current_request_method;
-	echo ($error_message);
+	printf('Method Not Allowed: ' . $current_request_method . " \n \n");
+	printf('Allowed methods: ' . implode(', ', $allowed_request_methods) . " \n \n");
 	die();
 }
 
@@ -146,7 +146,7 @@ switch ($current_request_method) {
 				destroy_session();
 				header('Location: ' . $self);
 			} else {
-				echo getLoginForm("Unknown action: {$action}");
+				echo getLoginForm('Unknown action: {$action}');
 			}
 
 
